@@ -19,7 +19,7 @@ namespace NasaSpaceApp.Managers
         public async Task<AirQualityIndex> GetBreezometerAirQualityIndexAsync(double latitude, double longitude)
         {
             string url = string.Format(HttpClientUtil.AqiUrl, latitude, longitude);
-            var uri = HttpClientUtil.GetUriForUrl(HttpClientUtil.BaseBreezometerApi + url);
+            var uri = new Uri(HttpClientUtil.BaseBreezometerApi + url);
 
             try
             {
@@ -43,7 +43,7 @@ namespace NasaSpaceApp.Managers
         public async Task<List<AirQualityIndex>> GetBreezometerAirQualityIndexHistoricalListAsync(DateTime rangeStart, DateTime rangeEnd, double latitude, double longitude)
         {
             string url = string.Format(HttpClientUtil.HistoricalAqiUrl, rangeStart, rangeEnd, latitude, longitude);
-            var uri = HttpClientUtil.GetUriForUrl(HttpClientUtil.BaseBreezometerApi + url);
+            var uri = new Uri(HttpClientUtil.BaseBreezometerApi + url);
 
             try
             {

@@ -1,13 +1,14 @@
-﻿<Page x:Class="NasaSpaceApp.UI.MapPageView"
+﻿<Page x:ConnectionId='1' x:Class="NasaSpaceApp.UI.MapPageView"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:NasaSpaceApp.UI"
       xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      Loaded="MapPageView_OnLoaded"
+                                   
       mc:Ignorable="d">
   <Grid>
-    <maps:MapControl x:Name="MapControl" BusinessLandmarksVisible="True" />
+    <maps:MapControl x:ConnectionId='2' x:Name="MapControl" BusinessLandmarksVisible="True" />
   </Grid>
 </Page>
+

@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using NasaSpaceApp.Helpers;
+using NasaSpaceApp.Managers;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,6 +30,20 @@ namespace NasaSpaceApp.UI
             this.InitializeComponent();
             MapControl.ColorScheme = MapColorScheme.Dark;
             MapControl.Style = MapStyle.Aerial3DWithRoads;
+        }
+
+        private async void MapPageView_OnLoaded(object sender, RoutedEventArgs e)
+        {
+              BreezometerManager manager = new BreezometerManager();
+
+            try
+            {
+                var data = await manager.GetBreezometerAirQualityIndexAsync(40.7324296, -73.9977264);
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
     }
 }
