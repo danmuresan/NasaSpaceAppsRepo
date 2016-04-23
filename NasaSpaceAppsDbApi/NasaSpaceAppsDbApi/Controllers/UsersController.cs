@@ -32,6 +32,18 @@ namespace NasaSpaceAppsDbApi.Controllers
             return Ok(user);
         }
 
+        [ResponseType(typeof(User))]
+        public async Task<IHttpActionResult> GetUserByUsername(string username)
+        {
+            User user = await db.Users.FirstOrDefaultAsync(x => x.Username == username);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
+        }
+
         // PUT: api/Users/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutUser(int id, User user)

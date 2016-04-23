@@ -42,3 +42,5 @@ D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbAp
 D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbApi\bin\System.Web.Http.WebHost.xml
 D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbApi\obj\Debug\NasaSpaceAppsDbApi.dll
 D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbApi\obj\Debug\NasaSpaceAppsDbApi.pdb
+D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbApi\obj\Debug\NasaSpaceAppsDbApi.Migrations.InitialCreate.resources
+D:\Projects\NasaSpaceApps\NasaSpaceAppsRepo\NasaSpaceAppsDbApi\NasaSpaceAppsDbApi\obj\Debug\NasaSpaceAppsDbApi.csproj.GenerateResource.Cache
