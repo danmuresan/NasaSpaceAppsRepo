@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>2ce33ecb-2bb7-4030-bc62-fb800fe66704</PackageIdentityName>
     <IntermediateOutputPath>E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>EDA4471769F32A5F7F3B2A7425E3470B25B2456EF7F6F6AD5CC019296BE6B330</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>30101EBC77ED65A4448FD5D98585DF9F012E1B112F1D1529F92118E685371BA0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2ce33ecb-2bb7-4030-bc62-fb800fe66704_1.0.0.0_x86__h72g8cah9ve1a</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2ce33ecb-2bb7-4030-bc62-fb800fe66704_h72g8cah9ve1a!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2ce33ecb-2bb7-4030-bc62-fb800fe66704</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-23T08:16:45.404</Modified>
+      <Modified>2016-04-23T09:31:57.545</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +60,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\entrypoint\NasaSpaceApp.exe">
       <PackagePath>entrypoint\NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T08:16:43.934</Modified>
+      <Modified>2016-04-23T09:31:56.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -104,11 +104,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.exe">
       <PackagePath>NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T08:16:45.404</Modified>
+      <Modified>2016-04-23T09:31:57.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.xr.xml">
       <PackagePath>NasaSpaceApp.xr.xml</PackagePath>
-      <Modified>2016-04-23T07:17:05.210</Modified>
+      <Modified>2016-04-23T09:31:56.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -120,7 +120,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-23T08:16:44.904</Modified>
+      <Modified>2016-04-23T09:31:57.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

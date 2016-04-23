@@ -887,3 +887,11 @@ E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\Core\GalaS
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\Core\GalaSoft.MvvmLight.Platform.dll
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\Core\Newtonsoft.Json.dll
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\Core\resources.pri
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\UI\LoginPageView.xbf
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\LoginPageView.g.i.cs
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\LoginPageView.g.cs
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\LoginPageView.xaml
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\LoginPageView.xbf
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\UI\Styles.xbf
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\Styles.xaml
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\Styles.xbf
