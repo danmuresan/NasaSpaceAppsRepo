@@ -20,6 +20,7 @@
       <RowDefinition Height="AUto" />
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <TextBlock Grid.Row="0"
                Margin="10,10,10,10"
@@ -102,5 +103,17 @@
             CommandParameter="{Binding ElementName=PasswordBox}"
             Content="Sign In"
             Foreground="BurlyWood" />
+    <Button Grid.Row="5"
+            Width="100"
+            Height="30"
+            Margin="15,15,15,15"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="LightCyan"
+            Command="{x:Bind Vm.SignUpCommand, Mode=OneWay}"
+            CommandParameter="{Binding ElementName=PasswordBox}"
+            Content="Sign Up"
+            Foreground="BurlyWood"
+            Visibility="{x:Bind Vm.SignUpVisibility, Mode=OneWay}" />
   </Grid>
 </Page>

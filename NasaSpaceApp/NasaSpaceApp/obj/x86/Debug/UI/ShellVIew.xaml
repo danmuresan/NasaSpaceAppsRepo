@@ -12,7 +12,7 @@
              IsPaneOpen="False"
              OpenPaneLength="150">
     <SplitView.Pane>
-      <StackPanel Background="Gray">
+      <StackPanel Background="AntiqueWhite">
         <Button x:ConnectionId='3' x:Name="HamburgerButton"
                 Width="50"
                 Height="50"
@@ -21,12 +21,12 @@
                 Content="&#xE700;"
                 FontFamily="Segoe MDL2 Assets" />
         <StackPanel Orientation="Horizontal">
-          <Button x:ConnectionId='6' x:Name="MenuButton1"
+          <Button x:ConnectionId='7' x:Name="MenuButton1"
                   Width="50"
                   Height="50"
                   Background="Transparent"
                                                                     
-                  Content="&#xE825;"
+                  Content="&#xE128;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>MapView</local:PageType>
@@ -37,12 +37,12 @@
                      Text="Map View" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-          <Button x:ConnectionId='5' x:Name="MenuButton2"
+          <Button x:ConnectionId='6' x:Name="MenuButton2"
                   Width="50"
                   Height="50"
                   Background="Transparent"
                                                                     
-                  Content="&#xE825;"
+                  Content="&#xE12B;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>LiveImageView</local:PageType>
@@ -53,12 +53,12 @@
                      Text="Live Images" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-          <Button x:ConnectionId='4' x:Name="MenuButton3"
+          <Button x:ConnectionId='5' x:Name="MenuButton3"
                   Width="50"
                   Height="50"
                   Background="Transparent"
                                                                     
-                  Content="&#xE825;"
+                  Content="&#xE133;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>RawView</local:PageType>
@@ -67,6 +67,22 @@
           <TextBlock VerticalAlignment="Center"
                      FontSize="18"
                      Text="Raw Data" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <Button x:ConnectionId='4' x:Name="MenuButton4"
+                  Width="50"
+                  Height="50"
+                  Background="Transparent"
+                                                                    
+                  Content="&#xE1E0;"
+                  FontFamily="Segoe MDL2 Assets">
+            <Button.CommandParameter>
+              <local:PageType>SignOut</local:PageType>
+            </Button.CommandParameter>
+          </Button>
+          <TextBlock VerticalAlignment="Center"
+                     FontSize="18"
+                     Text="Sign Out" />
         </StackPanel>
       </StackPanel>
     </SplitView.Pane>
@@ -77,7 +93,7 @@
           <RowDefinition Height="Auto" />
           <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TextBlock x:ConnectionId='7' Grid.Row="0"
+        <TextBlock x:ConnectionId='8' Grid.Row="0"
                    Margin="10,10,10,10"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
@@ -88,7 +104,7 @@
         <Border Grid.Row="1"
                 BorderBrush="Beige"
                 BorderThickness="2" />
-        <ContentPresenter x:ConnectionId='8' Grid.Row="2"                                                />
+        <ContentPresenter x:ConnectionId='9' Grid.Row="2"                                                />
       </Grid>
     </SplitView.Content>
   </SplitView>

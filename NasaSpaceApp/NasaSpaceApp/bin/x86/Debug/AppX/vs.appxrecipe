@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-23T15:13:57.787</Modified>
+      <Modified>2016-04-23T16:40:49.359</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\entrypoint\NasaSpaceApp.exe">
       <PackagePath>entrypoint\NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T15:13:56.831</Modified>
+      <Modified>2016-04-23T16:40:48.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -108,11 +108,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.exe">
       <PackagePath>NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T15:13:57.785</Modified>
+      <Modified>2016-04-23T16:40:49.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.xr.xml">
       <PackagePath>NasaSpaceApp.xr.xml</PackagePath>
-      <Modified>2016-04-23T15:03:07.548</Modified>
+      <Modified>2016-04-23T16:27:52.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -124,7 +124,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-23T15:13:57.382</Modified>
+      <Modified>2016-04-23T16:40:48.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

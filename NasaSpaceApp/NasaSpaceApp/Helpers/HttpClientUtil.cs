@@ -6,6 +6,7 @@ namespace NasaSpaceApp.Helpers
     {
         public static string BaseUrl = "http://nasadbapi.azurewebsites.net/";
         public static string LoginUrl = "api/Login";
+        public static string CreateAccountUrl = "api/Users";
 
         public const string BreezometerKey = "faeaed1f594c4bb0b88c90782a0e9754";
         public const string BaseBreezometerApi = "https://api.breezometer.com/";

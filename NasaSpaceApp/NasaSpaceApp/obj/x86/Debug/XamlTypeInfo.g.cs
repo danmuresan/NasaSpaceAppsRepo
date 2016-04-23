@@ -250,7 +250,6 @@ namespace NasaSpaceApp.NasaSpaceApp_XamlTypeInfo
             case 5:   //  NasaSpaceApp.UI.MapPageView
                 userType = new global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_5_MapPageView;
-                userType.AddMemberName("Header");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -268,6 +267,7 @@ namespace NasaSpaceApp.NasaSpaceApp_XamlTypeInfo
                 userType.AddEnumValue("MapView", global::NasaSpaceApp.UI.PageType.MapView);
                 userType.AddEnumValue("RawView", global::NasaSpaceApp.UI.PageType.RawView);
                 userType.AddEnumValue("LiveImageView", global::NasaSpaceApp.UI.PageType.LiveImageView);
+                userType.AddEnumValue("SignOut", global::NasaSpaceApp.UI.PageType.SignOut);
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -328,17 +328,12 @@ namespace NasaSpaceApp.NasaSpaceApp_XamlTypeInfo
             var that = (global::NasaSpaceApp.UI.LiveImageVIew)instance;
             return that.Header;
         }
-        private object get_1_MapPageView_Header(object instance)
-        {
-            var that = (global::NasaSpaceApp.UI.MapPageView)instance;
-            return that.Header;
-        }
-        private object get_2_RawDataView_Header(object instance)
+        private object get_1_RawDataView_Header(object instance)
         {
             var that = (global::NasaSpaceApp.UI.RawDataView)instance;
             return that.Header;
         }
-        private object get_3_ShellVIew_Vm(object instance)
+        private object get_2_ShellVIew_Vm(object instance)
         {
             var that = (global::NasaSpaceApp.UI.ShellVIew)instance;
             return that.Vm;
@@ -357,22 +352,16 @@ namespace NasaSpaceApp.NasaSpaceApp_XamlTypeInfo
                 xamlMember.Getter = get_0_LiveImageVIew_Header;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "NasaSpaceApp.UI.MapPageView.Header":
-                userType = (global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NasaSpaceApp.UI.MapPageView");
-                xamlMember = new global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlMember(this, "Header", "String");
-                xamlMember.Getter = get_1_MapPageView_Header;
-                xamlMember.SetIsReadOnly();
-                break;
             case "NasaSpaceApp.UI.RawDataView.Header":
                 userType = (global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NasaSpaceApp.UI.RawDataView");
                 xamlMember = new global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlMember(this, "Header", "String");
-                xamlMember.Getter = get_2_RawDataView_Header;
+                xamlMember.Getter = get_1_RawDataView_Header;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NasaSpaceApp.UI.ShellVIew.Vm":
                 userType = (global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NasaSpaceApp.UI.ShellVIew");
                 xamlMember = new global::NasaSpaceApp.NasaSpaceApp_XamlTypeInfo.XamlMember(this, "Vm", "NasaSpaceApp.UI.ShellViewModel");
-                xamlMember.Getter = get_3_ShellVIew_Vm;
+                xamlMember.Getter = get_2_ShellVIew_Vm;
                 xamlMember.SetIsReadOnly();
                 break;
             }

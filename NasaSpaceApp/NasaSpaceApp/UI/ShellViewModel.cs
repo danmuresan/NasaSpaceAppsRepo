@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Storage;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Maps;
 using GalaSoft.MvvmLight;
@@ -16,7 +17,8 @@ namespace NasaSpaceApp.UI
     {
         MapView,
         RawView,
-        LiveImageView
+        LiveImageView,
+        SignOut
     }
     public class ShellViewModel : ViewModelBase
     {
@@ -34,7 +36,7 @@ namespace NasaSpaceApp.UI
             OpenPageAsync(PageType.MapView);
         }
 
-        private void OpenPageAsync(PageType page)
+        private async void OpenPageAsync(PageType page)
         {
             switch (page)
             {
@@ -49,6 +51,10 @@ namespace NasaSpaceApp.UI
                 case PageType.RawView:
                     CurrentPage = new RawDataView();
                     Header = "Raw Data";
+                    break;
+                case PageType.SignOut:
+                    await ApplicationData.Current.ClearAsync(ApplicationDataLocality.Local);
+                    m_navigationService.NavigateTo(nameof(LoginPageView));
                     break;
             }
             RaisePropertyChanged(nameof(CurrentPage));

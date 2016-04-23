@@ -61,6 +61,8 @@ namespace NasaSpaceApp
 
             navService.Configure("ShellVIew", typeof(ShellVIew));
 
+            navService.Configure("LoginPageView", typeof(LoginPageView));
+
             var navManager = new AppNavServiceManager(navService);
             Frame rootFrame = Window.Current.Content as Frame;
 
