@@ -90,6 +90,12 @@ namespace NasaSpaceApp
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
+        private static INavigationService CreateNavigationService()
+        {
+            INavigationService navigationService = new NavigationService();
+            
+            return navigationService;
+        }
 
         /// <summary>
         /// Invoked when application execution is being suspended.  Application state is saved

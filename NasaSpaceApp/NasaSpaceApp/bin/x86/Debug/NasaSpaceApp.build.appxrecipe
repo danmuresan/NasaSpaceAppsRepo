@@ -18,6 +18,9 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\Assets\alert-circle-red-128.png">
+      <PackagePath>Assets\alert-circle-red-128.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -197,6 +200,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.Net.Http.Formatting.dll">
+      <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>

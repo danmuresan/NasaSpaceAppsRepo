@@ -32,32 +32,69 @@
     <Border Grid.Row="1"
             BorderBrush="Beige"
             BorderThickness="2" />
-    <StackPanel Grid.Row="2"
-                Margin="0,10,0,0"
-                HorizontalAlignment="Center">
-      <TextBlock Margin="20,0,20,5"
+    <Grid Grid.Row="2"
+          Margin="0,10,0,0"
+          HorizontalAlignment="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.6*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Grid.Row="0"
+                 Grid.Column="0"
+                 Margin="20,10,20,5"
                  HorizontalAlignment="Center"
                  Foreground="Bisque"
-                 Text="UserName" />
-      <TextBox Width="150"
-               Margin="20,0,20,20"
+                 Text="Username" />
+      <TextBox Grid.Row="1"
+               Grid.Column="0"
+               Width="150"
                HorizontalAlignment="Center"
+               VerticalAlignment="Center"
                InputScope="Password"
+               Text="{x:Bind Vm.UserName, Mode=TwoWay}"
                TextAlignment="Left" />
-    </StackPanel>
-    <StackPanel Grid.Row="3" HorizontalAlignment="Center">
-      <TextBlock Margin="20,0,20,5"
+      <Image Grid.Row="1"
+             Grid.Column="1"
+             Width="15"
+             Height="15"
+             Margin="5,0,5,0"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Source="../Assets/alert-circle-red-128.png"
+             Visibility="{x:Bind Vm.ErrorVisibility, Mode=OneWay}" />
+      <TextBlock Grid.Row="2"
+                 Grid.Column="0"
+                 Margin="20,10,20,5"
                  HorizontalAlignment="Center"
                  Foreground="Bisque"
                  Text="Password" />
       <PasswordBox x:Name="PasswordBox"
+                   Grid.Row="3"
+                   Grid.Column="0"
                    Width="150"
-                   Margin="20,0,20,20"
-                   HorizontalAlignment="Center" />
-    </StackPanel>
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+      <Image Grid.Row="3"
+             Grid.Column="1"
+             Width="15"
+             Height="15"
+             Margin="5,0,5,0"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Source="../Assets/alert-circle-red-128.png"
+             Visibility="{x:Bind Vm.ErrorVisibility, Mode=OneWay}" />
+
+    </Grid>
     <Button Grid.Row="4"
             Width="100"
             Height="30"
+            Margin="15,15,15,15"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="LightCyan"

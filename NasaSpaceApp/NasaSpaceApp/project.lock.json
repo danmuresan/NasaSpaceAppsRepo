@@ -43,6 +43,18 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "[1.0.14, )"
@@ -1670,6 +1682,18 @@
         },
         "runtime": {
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -3391,6 +3415,18 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "[1.0.14, )"
@@ -5080,6 +5116,18 @@
         },
         "runtime": {
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -6806,6 +6854,18 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "[1.0.14, )"
@@ -8495,6 +8555,18 @@
         },
         "runtime": {
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -10219,6 +10291,18 @@
         },
         "runtime": {
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "[6.0.4, )",
+          "Microsoft.Net.Http": "[2.2.22, )"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -11953,6 +12037,20 @@
         "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
         "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
         "package/services/metadata/core-properties/4f6f732debe548beaa1183418e8d65cc.psmdcp",
+        "[Content_Types].xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "Package",
+      "files": [
+        "_rels/.rels",
+        "Microsoft.AspNet.WebApi.Client.nuspec",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "package/services/metadata/core-properties/912f593b0a6b453a8eaeaa06c571a1ae.psmdcp",
         "[Content_Types].xml"
       ]
     },
@@ -15660,6 +15758,7 @@
       "Microsoft.ApplicationInsights >= 1.0.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.0.0",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.0.0",
+      "Microsoft.AspNet.WebApi.Client >= 5.2.3",
       "Microsoft.Net.Http >= 2.2.29",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
       "MvvmLight >= 5.2.0",
