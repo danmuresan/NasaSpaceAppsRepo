@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
@@ -23,12 +24,6 @@ namespace NasaSpaceApp.UI
 
         public object CurrentPage { get; set; }
 
-        public object MapPage => new MapPageView();
-
-        public object RawDataPage => new RawDataView();
-
-        public object LiveImagePage => new LiveImageVIew();
-
         public string Header { get; set; }
 
         public RelayCommand<PageType> OpenPageCommand { get; }
@@ -36,7 +31,7 @@ namespace NasaSpaceApp.UI
         {
             m_navigationService = AppNavServiceManager.GetNavigationService();
             OpenPageCommand = new RelayCommand<PageType>(OpenPageAsync);
-            CurrentPage = MapPage;
+            OpenPageAsync(PageType.MapView);
         }
 
         private void OpenPageAsync(PageType page)
@@ -44,15 +39,15 @@ namespace NasaSpaceApp.UI
             switch (page)
             {
                 case PageType.MapView:
-                    CurrentPage = MapPage;
+                    CurrentPage = new MapPageView();
                     Header = "Map View";
                     break;
                 case PageType.LiveImageView:
-                    CurrentPage = LiveImagePage;
+                    CurrentPage = new LiveImageVIew();
                     Header = "Live Image";
                     break;
                 case PageType.RawView:
-                    CurrentPage = RawDataPage;
+                    CurrentPage = new RawDataView();
                     Header = "Raw Data";
                     break;
             }

@@ -22,7 +22,7 @@
     <AppXManifest Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-23T15:10:05.928</Modified>
+      <Modified>2016-04-23T15:13:57.787</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\entrypoint\NasaSpaceApp.exe">
       <PackagePath>entrypoint\NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T15:10:04.996</Modified>
+      <Modified>2016-04-23T15:13:56.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.exe">
       <PackagePath>NasaSpaceApp.exe</PackagePath>
-      <Modified>2016-04-23T15:10:05.927</Modified>
+      <Modified>2016-04-23T15:13:57.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\NasaSpaceApp.xr.xml">
       <PackagePath>NasaSpaceApp.xr.xml</PackagePath>
@@ -124,7 +124,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-23T15:10:05.531</Modified>
+      <Modified>2016-04-23T15:13:57.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

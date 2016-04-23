@@ -924,3 +924,11 @@ E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\UI\MapPage
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\bin\x86\Debug\UI\RawDataView.xbf
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\RawDataView.g.i.cs
 E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\UI\RawDataView.g.cs
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\layout.resfiles
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\layout.resfiles.intermediate
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\Resources.resfiles
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\Resources.resfiles.intermediate
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\pri.resfiles
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\pri.resfiles.intermediate
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\priconfig.xml
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\obj\x86\Debug\System.Net.Http.Formatting\priconfig.xml.intermediate
