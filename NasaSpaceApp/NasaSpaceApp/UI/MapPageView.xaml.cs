@@ -26,6 +26,8 @@ namespace NasaSpaceApp.UI
         public MapPageView()
         {
             this.InitializeComponent();
+            MapControl.ColorScheme = MapColorScheme.Dark;
+            MapControl.Style = MapStyle.Aerial3DWithRoads;
         }
     }
 }

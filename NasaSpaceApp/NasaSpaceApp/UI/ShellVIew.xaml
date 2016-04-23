@@ -12,7 +12,7 @@
              IsPaneOpen="False"
              OpenPaneLength="150">
     <SplitView.Pane>
-      <StackPanel Background="Gray">
+      <StackPanel Background="AntiqueWhite">
         <Button x:Name="HamburgerButton"
                 Width="50"
                 Height="50"
@@ -26,7 +26,7 @@
                   Height="50"
                   Background="Transparent"
                   Command="{x:Bind Vm.OpenPageCommand, Mode=OneWay}"
-                  Content="&#xE825;"
+                  Content="&#xE128;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>MapView</local:PageType>
@@ -42,7 +42,7 @@
                   Height="50"
                   Background="Transparent"
                   Command="{x:Bind Vm.OpenPageCommand, Mode=OneWay}"
-                  Content="&#xE825;"
+                  Content="&#xE12B;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>LiveImageView</local:PageType>
@@ -58,7 +58,7 @@
                   Height="50"
                   Background="Transparent"
                   Command="{x:Bind Vm.OpenPageCommand, Mode=OneWay}"
-                  Content="&#xE825;"
+                  Content="&#xE133;"
                   FontFamily="Segoe MDL2 Assets">
             <Button.CommandParameter>
               <local:PageType>RawView</local:PageType>
