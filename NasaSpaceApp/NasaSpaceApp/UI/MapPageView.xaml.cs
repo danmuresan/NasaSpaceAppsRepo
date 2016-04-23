@@ -77,29 +77,36 @@ namespace NasaSpaceApp.UI
 
         private async void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            string city = sender.Text;
-            MapLocationFinderResult result = await MapLocationFinder.FindLocationsAsync(city, new Geopoint(new BasicGeoposition()));
-            var location = result.Locations.FirstOrDefault();
+            string city = args.ChosenSuggestion as string ?? args.QueryText;
 
-            if (location != null)
+            if (!string.IsNullOrEmpty(city))
             {
-                var pos = location.Point.Position;
-                var data = m_aqiManager.GetBreezometerAirQualityIndexAsync(pos.Latitude, pos.Longitude);
+                var data = await m_aqiManager.GetBreezometerAirQualityIndexByLocationAsync(city);
+
+                if (!data?.DataValid ?? true)
+                {
+                    MapLocationFinderResult result = await MapLocationFinder.FindLocationsAsync(city, new Geopoint(new BasicGeoposition()));
+                    var location = result.Locations.FirstOrDefault();
+
+                    if (location != null)
+                    {
+                        var pos = location.Point.Position;
+                        data = await m_aqiManager.GetBreezometerAirQualityIndexAsync(pos.Latitude, pos.Longitude);
+                    }
+
+                    if (!data?.DataValid ?? true)
+                    {
+                        await AppNavServiceManager.ShowPopup("No data found for this city!");
+                    }
+                }
+                else
+                {
+                    // TODO: ... TODO....
+                    await AppNavServiceManager.ShowPopup("Data found!");
+                    //MapControl.
+                }
             }
         }
 
-        private async void MapPageView_OnLoaded(object sender, RoutedEventArgs e)
-        {
-              BreezometerManager manager = new BreezometerManager();
-
-            try
-            {
-                var data = await manager.GetBreezometerAirQualityIndexAsync(40.7324296, -73.9977264);
-            }
-            catch (Exception ex)
-            {
-                
-            }
-        }
     }
 }
