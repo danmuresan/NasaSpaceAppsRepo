@@ -1,1 +1,1 @@
-E:\Projects\NasaSpaceApp\NasaSpaceApp\NasaSpaceApp.csproj;x86
+E:\Projects\NasaSpaceAppsRepo\NasaSpaceApp\NasaSpaceApp\NasaSpaceApp.csproj;x86
