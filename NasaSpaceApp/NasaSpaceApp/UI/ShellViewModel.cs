@@ -23,6 +23,12 @@ namespace NasaSpaceApp.UI
 
         public object CurrentPage { get; set; }
 
+        public object MapPage => new MapPageView();
+
+        public object RawDataPage => new RawDataView();
+
+        public object LiveImagePage => new LiveImageVIew();
+
         public string Header { get; set; }
 
         public RelayCommand<PageType> OpenPageCommand { get; }
@@ -30,6 +36,7 @@ namespace NasaSpaceApp.UI
         {
             m_navigationService = AppNavServiceManager.GetNavigationService();
             OpenPageCommand = new RelayCommand<PageType>(OpenPageAsync);
+            CurrentPage = MapPage;
         }
 
         private void OpenPageAsync(PageType page)
@@ -37,15 +44,15 @@ namespace NasaSpaceApp.UI
             switch (page)
             {
                 case PageType.MapView:
-                    CurrentPage = new MapPageView();
+                    CurrentPage = MapPage;
                     Header = "Map View";
                     break;
                 case PageType.LiveImageView:
-                    CurrentPage = new LiveImageVIew();
+                    CurrentPage = LiveImagePage;
                     Header = "Live Image";
                     break;
                 case PageType.RawView:
-                    CurrentPage = new RawDataView();
+                    CurrentPage = RawDataPage;
                     Header = "Raw Data";
                     break;
             }

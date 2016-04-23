@@ -25,7 +25,7 @@ namespace NasaSpaceApp.Helpers
         {
             var container = ApplicationData.Current.LocalSettings;
             var returnValue = container.Values[key];
-            return returnValue.ToString();
+            return returnValue != null ? returnValue.ToString() : string.Empty;
         }
     }
 }
