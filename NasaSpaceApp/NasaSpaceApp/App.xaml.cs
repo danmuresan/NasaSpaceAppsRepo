@@ -9,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -16,6 +17,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using NasaSpaceApp.Helpers;
 
 namespace NasaSpaceApp
 {
@@ -50,6 +52,16 @@ namespace NasaSpaceApp
             }
 #endif
 
+            if (!ApplicationData.Current.LocalSettings.Containers.ContainsKey("UserInfo"))
+            {
+                ApplicationData.Current.LocalSettings.CreateContainer("UserInfo", ApplicationDataCreateDisposition.Always);
+            }
+
+            NavigationService navService = new NavigationService();
+
+            navService.Configure("ShellVIew", typeof(ShellVIew));
+
+            var navManager = new AppNavServiceManager(navService);
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,

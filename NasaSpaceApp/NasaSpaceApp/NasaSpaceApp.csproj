@@ -96,6 +96,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AppDataUtil.cs" />
+    <Compile Include="Helpers\AppNavServiceManager.cs" />
+    <Compile Include="Helpers\CommandHelper.cs" />
     <Compile Include="Helpers\HttpClientExtensions.cs" />
     <Compile Include="Helpers\HttpClientUtil.cs" />
     <Compile Include="Helpers\PasswordHelper.cs" />
@@ -104,10 +107,24 @@
     </Compile>
     <Compile Include="Models\NetModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\LiveImageVIew.xaml.cs">
+      <DependentUpon>LiveImageVIew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MapPageView.xaml.cs">
+      <DependentUpon>MapPageView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\LoginPageView.xaml.cs">
       <DependentUpon>LoginPageView.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\LoginPageViewModel.cs" />
+    <Compile Include="UI\NavigablePage.cs" />
+    <Compile Include="UI\RawDataView.xaml.cs">
+      <DependentUpon>RawDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShellVIew.xaml.cs">
+      <DependentUpon>ShellVIew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShellViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -134,6 +151,22 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\LiveImageVIew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\MapPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\RawDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ShellVIew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Styles.xaml">
       <SubType>Designer</SubType>

@@ -1,4 +1,8 @@
 App.xbf
 MainPage.xbf
+UI\LiveImageVIew.xbf
 UI\LoginPageView.xbf
+UI\MapPageView.xbf
+UI\RawDataView.xbf
+UI\ShellVIew.xbf
 UI\Styles.xbf

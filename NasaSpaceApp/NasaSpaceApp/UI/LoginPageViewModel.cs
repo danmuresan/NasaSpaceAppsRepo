@@ -4,6 +4,7 @@ using GalaSoft.MvvmLight.Command;
 using NasaSpaceApp.Helpers;
 using NasaSpaceApp.Models;
 using System.Net.Http;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using GalaSoft.MvvmLight.Views;
@@ -13,6 +14,7 @@ namespace NasaSpaceApp.UI
     public class LoginPageViewModel : ViewModelBase
     {
         private readonly HttpClient m_httpClient;
+        private readonly INavigationService m_navigationService;
 
         private bool m_loginFailed;
         public RelayCommand<object> LoginCommand { get; }
@@ -36,29 +38,44 @@ namespace NasaSpaceApp.UI
             m_httpClient = new HttpClient();
             LoginCommand = new RelayCommand<object>(LoginAsync);
             LoginFailed = false;
+            m_navigationService = AppNavServiceManager.GetNavigationService();
         }
 
         private async void LoginAsync(object passwordBox)
         {
             Password = (passwordBox as PasswordBox).Password;
-            var passwordField = PasswordHelper.ComputeMD5(Password);
             
             LoginModel model = new LoginModel
             {
                 Username = UserName,
-                Password = passwordField
+                Password = Password
             };
-
             try
             {
-                var response = await m_httpClient.PostAsJsonAsync<LoginModel>(HttpClientUtil.GetUriForUrl(HttpClientUtil.LoginUrl), model);
+                var response =
+                    await
+                        m_httpClient.PostAsJsonAsync<LoginModel>(HttpClientUtil.GetUriForUrl(HttpClientUtil.LoginUrl),
+                            model);
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    if (content == bool.FalseString.ToLowerInvariant())
+                    {
+                        throw new ArgumentException("Login Failed");
+                    }
+                    LoginFailed = false;
+                    AppDataUtil.SaveValue(AppDataUtil.KeyUsername, UserName);
+                    AppDataUtil.SaveValue(AppDataUtil.KeyMd5Password, Password);
+                    m_navigationService.NavigateTo(nameof(ShellVIew));
+                }
+                else
+                {
+                    LoginFailed = true;
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 LoginFailed = true;
-            }
-            if (!LoginFailed)
-            {
             }
         }
     }
