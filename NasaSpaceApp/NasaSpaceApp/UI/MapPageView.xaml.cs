@@ -7,6 +7,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -22,8 +23,6 @@ namespace NasaSpaceApp.UI
     /// </summary>
     public sealed partial class MapPageView : Page
     {
-
-        public string Header => "Map View";
         public MapPageView()
         {
             this.InitializeComponent();
