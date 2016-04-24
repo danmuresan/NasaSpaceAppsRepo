@@ -40,6 +40,30 @@ namespace NasaSpaceApp.Managers
             return null;
         }
 
+        public async Task<AirQualityIndex> GetBreezometerAirQualityIndexByLocationAsync(string city)
+        {
+            string url = string.Format(HttpClientUtil.AqiLocationUrl, city);
+            var uri = new Uri(HttpClientUtil.BaseBreezometerApi + url);
+
+            try
+            {
+                var response = await m_httpClient.GetAsync(uri);
+                if (response != null)
+                {
+                    var content = await response.Content.ReadAsAsync<AirQualityIndex>();
+                    return content;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex.Message);
+
+                return null;
+            }
+
+            return null;
+        }
+
         public async Task<List<AirQualityIndex>> GetBreezometerAirQualityIndexHistoricalListAsync(DateTime rangeStart, DateTime rangeEnd, double latitude, double longitude)
         {
             string url = string.Format(HttpClientUtil.HistoricalAqiUrl, rangeStart, rangeEnd, latitude, longitude);
